@@ -196,8 +196,9 @@ li a {
 .map {
   width: 90%;
   display: block;
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
   border: 2px solid white; }
 
 /**Forside: Desktop Media Querie**/
@@ -358,7 +359,7 @@ li a {
     #event {
       display: grid;
       grid-template-columns: 10% 40% 40% 10%;
-      grid-template-areas: "header header header header" ". VideoSec VideoSec ." ". Sec1 Foto1 ." ". Sec1 Foto2 ." "footer footer footer footer"; }
+      grid-template-areas: "header header header header" ". VideoSec VideoSec ." ". Sec1 Foto1 ." ". Sec1 Foto2 ." ". Sec1 Foto3 ." "footer footer footer footer"; }
 
     .fest {
       margin-top: 20px; }
@@ -378,6 +379,9 @@ li a {
 
     .Foto2 {
       grid-area: Foto2; }
+
+    .Foto3 {
+      grid-area: Foto3; }
 
     footer {
       grid-area: footer; } } }
