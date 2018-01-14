@@ -1,0 +1,378 @@
+@charset "UTF-8";
+/**Generelt**/
+@import url("https://fonts.googleapis.com/css?family=Dosis");
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+h1 {
+  font-family: "Baskerville Old Face" Serif;
+  padding: 0 15px;
+  text-align: center;
+  font-size: 1.3em; }
+
+h3 {
+  font-family: Dosis;
+  padding: 0 25px;
+  text-align: justify; }
+
+.mobilKontakt {
+  text-align: left;
+  padding: 5px; }
+
+h5 {
+  font-family: Dosis;
+  color: white;
+  margin: 0;
+  text-align: center; }
+
+p {
+  font-family: Dosis;
+  padding: 0 15px;
+  text-align: justify;
+  font-size: 1.1em; }
+
+/**Header**/
+header {
+  background-image: url("http://krenkerupbryggeri.dk/krenkerup/wp-content/uploads/krenkerup-feature-fadol-02.jpg");
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat; }
+
+.logoMobil {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.logoDesktop {
+  display: none; }
+
+/**Navigationsbar**/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.7); }
+
+li {
+  font-family: Dosis;
+  font-weight: bold;
+  font-size: 1em; }
+
+li a {
+  color: white;
+  text-decoration: none; }
+
+.current {
+  font-size: 1.4em; }
+
+/**Footer**/
+.mobilFoot {
+  height: 70px;
+  background-color: grey;
+  border-top: 3px solid darkred;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between; }
+
+.deskFoot {
+  display: none; }
+
+.social {
+  width: 20%;
+  float: right;
+  margin-top: 15px;
+  margin-right: 5px; }
+
+/**Forside**/
+.headline {
+  font-size: 2em; }
+
+.foto {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.Sec1, .Sec2, .Sec3 {
+  padding-bottom: 10px;
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 2px solid darkred;
+  background-color: rgba(211, 211, 211, 0.2); }
+
+/**Brygsiden**/
+.video {
+  margin-top: 30px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto; }
+
+.video iframe {
+  display: block;
+  margin-right: auto;
+  margin-left: auto; }
+
+.beer {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px; }
+
+.gSec3 {
+  border-top: 2px solid darkred;
+  background-color: rgba(211, 211, 211, 0.2);
+  margin-top: 20px; }
+
+/**Vises kun p├Ñ Desktop**/
+.skjul {
+  display: none; }
+
+.andreVarianter {
+  text-align: right;
+  padding-bottom: 0;
+  margin-bottom: 0; }
+
+.andre {
+  width: 45%;
+  padding: 10px;
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  margin-left: 20px;
+  float: right; }
+
+/**Hover tekst styling**/
+.container {
+  position: relative;
+  width: 50%; }
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); }
+
+.container:hover .andre {
+  opacity: 0.3; }
+
+.container:hover .middle {
+  opacity: 1; }
+
+.text {
+  background-color: gray;
+  color: white;
+  font-size: 16px;
+  padding: 5px; }
+
+/**Historiesiden**/
+.histFoto {
+  width: 90%;
+  margin-left: 0; }
+
+/**Festsiden**/
+.fest {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.visIkke {
+  display: none; }
+
+/**Forside: Desktop Media Querie**/
+@supports (grid-area: auto) {
+  @media screen and (min-width: 600px) {
+    #hjem {
+      display: grid;
+      grid-template-columns: 10% 40% 40% 10%;
+      grid-template-areas: "header header header header" ". Sec1 Sec1 ." ". Sec2 Sec3 ." "footer footer footer footer"; }
+
+    p {
+      padding: 25px; }
+
+    .logoMobil {
+      display: none; }
+
+    .logoDesktop {
+      width: 50%;
+      display: block;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.4); }
+
+    nav {
+      position: absolute;
+      top: 15px;
+      right: 10px; }
+
+    ul {
+      display: flex;
+      justify-content: flex-end; }
+
+    li {
+      padding: 10px 20px;
+      font-size: 1.2em; }
+
+    .current {
+      font-size: 1.7em; }
+
+    .deskFoot {
+      height: 140px;
+      background-color: gray;
+      border-top: 8px solid darkred;
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+
+    .mobilFoot {
+      display: none; }
+
+    .social {
+      width: 50px;
+      padding: 5px;
+      margin: 0; }
+
+    .vl {
+      border-left: 1px solid darkred;
+      height: 50px; }
+
+    /**Grid Areas**/
+    header {
+      grid-area: header;
+      background-position: top; }
+
+    .Sec1 {
+      grid-area: Sec1;
+      margin-left: 20px; }
+
+    .Sec2 {
+      grid-area: Sec2;
+      margin-left: 20px;
+      border-left: 2px solid darkred; }
+
+    .Sec3 {
+      grid-area: Sec3;
+      margin-left: 20px;
+      border-left: 2px solid darkred; }
+
+    footer {
+      grid-area: footer; } } }
+/**Jubil├ªumsbryg: Desktop Media Querie**/
+@supports (grid-area: auto) {
+  @media screen and (min-width: 600px) {
+    #bryg {
+      display: grid;
+      grid-template-columns: 10% 40% 40% 10%;
+      grid-template-areas: "header header header header" ". gSec1 gSec2 ." ". gSec1 gSec3 ." "footer footer footer footer"; }
+
+    .beer {
+      width: 120%;
+      padding-right: 250px; }
+
+    .skjul {
+      display: block; }
+
+    .flasker {
+      display: flex;
+      justify-content: space-around; }
+
+    .gSec3 p {
+      margin-top: 0;
+      padding-top: 0; }
+
+    header {
+      grid-area: header; }
+
+    .gSec1 {
+      grid-area: gSec1;
+      margin-left: 100px; }
+
+    .gSec2 {
+      grid-area: gSec2; }
+
+    .gSec3 {
+      grid-area: gSec3;
+      border-left: 2px solid darkred; }
+
+    footer {
+      grid-area: footer; } } }
+/**Historie: Desktop Media Querie**/
+@supports (grid-area: auto) {
+  @media screen and (min-width: 600px) {
+    #historie {
+      display: grid;
+      grid-template-columns: 10% 40% 40% 10%;
+      grid-template-areas: "header header header header" ". VideoSec VideoSec ." ". Sec1 Sec2 ." ". Sec3 Sec4 ." "footer footer footer footer"; }
+
+    .video {
+      width: 60%; }
+
+    .historie {
+      background-color: rgba(211, 211, 211, 0.2);
+      border-left: 2px solid darkred;
+      border-top: 2px solid darkred;
+      margin-top: 20px; }
+
+    header {
+      grid-area: header; }
+
+    .VideoSec {
+      grid-area: VideoSec; }
+
+    .Sec1 {
+      grid-area: Sec1; }
+
+    .Sec2 {
+      grid-area: Sec2; }
+
+    .Sec3 {
+      grid-area: Sec3; }
+
+    .Sec4 {
+      grid-area: Sec4;
+      margin-left: 20px; } } }
+/**Event: Desktop Media Querie**/
+@supports (grid-area: auto) {
+  @media screen and (min-width: 600px) {
+    #event {
+      display: grid;
+      grid-template-columns: 10% 40% 40% 10%;
+      grid-template-areas: "header header header header" ". VideoSec VideoSec ." ". Sec1 Foto1 ." ". Sec1 Foto2 ." "footer footer footer footer"; }
+
+    .fest {
+      margin-top: 20px; }
+
+    .visIkke {
+      display: block; }
+
+    /**Grid areas**/
+    header {
+      grid-area: header; }
+
+    .Sec1 {
+      grid-area: Sec1; }
+
+    .Foto1 {
+      grid-area: Foto1; }
+
+    .Foto2 {
+      grid-area: Foto2; }
+
+    footer {
+      grid-area: footer; } } }
+
+/*# sourceMappingURL=styles.css.map */
