@@ -193,6 +193,13 @@ li a {
 .visIkke {
   display: none; }
 
+.map {
+  width: 90%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border: 2px solid white; }
+
 /**Forside: Desktop Media Querie**/
 @supports (grid-area: auto) {
   @media screen and (min-width: 600px) {
