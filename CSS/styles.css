@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /**Generelt**/
 @import url("https://fonts.googleapis.com/css?family=Dosis");
+@import url("https://fonts.googleapis.com/css?family=Lora");
 * {
   box-sizing: border-box; }
 
@@ -8,7 +9,7 @@ body {
   margin: 0; }
 
 h1 {
-  font-family: "Baskerville Old Face";
+  font-family: Lora;
   padding: 0 15px;
   text-align: center;
   font-size: 1.3em; }
@@ -33,6 +34,10 @@ p {
   padding: 0 15px;
   text-align: justify;
   font-size: 1.1em; }
+
+mark {
+  background-color: transparent;
+  font-weight: bold; }
 
 /**Header**/
 header {
@@ -63,9 +68,9 @@ ul {
   background-color: rgba(0, 0, 0, 0.7); }
 
 li {
-  font-family: Dosis;
+  font-family: Lora;
   font-weight: bold;
-  font-size: 1em; }
+  font-size: 0.8em; }
 
 li a {
   color: white;
@@ -94,7 +99,7 @@ li a {
 
 /**Forside**/
 .headline {
-  font-size: 2em; }
+  font-size: 1.5em; }
 
 .foto {
   width: 90%;
@@ -108,6 +113,9 @@ li a {
   margin-top: 20px;
   border-top: 2px solid darkred;
   background-color: rgba(211, 211, 211, 0.2); }
+
+section a {
+  color: red; }
 
 /**Brygsiden**/
 .video {
@@ -175,13 +183,16 @@ li a {
 .text {
   background-color: gray;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
+  font-family: Lora;
   padding: 5px; }
 
 /**Historiesiden**/
 .histFoto {
   width: 90%;
-  margin-left: 0; }
+  display: block;
+  margin-right: auto;
+  margin-left: auto; }
 
 /**Festsiden**/
 .fest {
@@ -211,6 +222,9 @@ li a {
 
     p {
       padding: 25px; }
+
+    .headline {
+      font-size: 2em; }
 
     .logoMobil {
       display: none; }
