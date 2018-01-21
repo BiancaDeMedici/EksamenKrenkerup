@@ -81,7 +81,7 @@ li a {
 
 /**Footer**/
 .mobilFoot {
-  height: 70px;
+  height: 80px;
   background-color: grey;
   border-top: 3px solid darkred;
   margin-top: 20px;
@@ -302,8 +302,7 @@ section a {
       grid-template-areas: "header header header header" ". gSec1 gSec2 ." ". gSec1 gSec3 ." "footer footer footer footer"; }
 
     .beer {
-      width: 120%;
-      padding-right: 250px; }
+      width: 100%; }
 
     .skjul {
       display: block; }
@@ -320,8 +319,7 @@ section a {
       grid-area: header; }
 
     .gSec1 {
-      grid-area: gSec1;
-      margin-left: 100px; }
+      grid-area: gSec1; }
 
     .gSec2 {
       grid-area: gSec2; }
